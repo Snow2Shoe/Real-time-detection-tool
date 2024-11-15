@@ -2,10 +2,10 @@ import torch
 import pandas as pd
 from screenshot_utils import capture_screenshot
 
-# YOLOモデルの初期化
-def load_yolo_model(model_path, device="cpu"):
-    device = torch.device(device)
-    model = torch.hub.load('C:/Users/Greek/yolov5', 'custom', path=model_path, source='local').to(device)
+# YOLOv5のカスタムモデルをローカルリポジトリからロード
+def load_yolo_model(yolo_repo_path, model_path):
+    device = torch.device("cpu")
+    model = torch.hub.load(yolo_repo_path, 'custom', path=model_path, source='local').to(device)
     return model
 
 def run_yolo_detection(model, monitor_index=0, confidence_threshold=0.4):
