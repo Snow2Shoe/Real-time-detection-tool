@@ -1,6 +1,10 @@
 # Real-time-detection-tool
 PCの画面上で物体検知を行い、リアルタイムでディスプレイに反映するための補助ツール  
-![gif](https://github.com/user-attachments/assets/93883fbc-8560-41fc-b987-c1594df11ac6)
+
+
+
+https://github.com/user-attachments/assets/e919435f-a926-49d9-bbe4-bbf91eabf268
+
 
 # 特徴
 ・リアルタイム検出: 定期的にスクリーンショットを取得し、YOLOv5で物体を検出します。  
